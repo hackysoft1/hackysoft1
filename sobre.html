@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="tecnology.ico">
+    <title>Sobre - HackySoft</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        color: #100f0f;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        cursor: url('icons8-mouse-cursor-24.png'), auto; /* Define o cursor personalizado */
+    }
+
+        header {
+            background-color: #4f9cf9;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        .content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4f9cf9;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #0b93ab;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        footer {
+            background-color: #4f9cf9;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            color:  #D3D3D3;
+        }
+ /* Estilo básico para o link */
+a {
+    color: #007BB2; /* Cor padrão do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Efeito hover */
+a:hover {
+    color: #0056b3; /* Cor mais escura quando passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Suaviza a transição da cor e do sublinhado */
+}
+/* Estilo do botão */
+.btn-home {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4f9cf9; /* Cor azul */
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    z-index: 1000; /* Garantir que o botão fique acima de outros elementos */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animação de transformação */
+}
+
+/* Efeito hover */
+.btn-home:hover {
+    background-color: #005F8A; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Animação de transição suave */
+.btn-home:active {
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+.animated-btn {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 20px;
+  color:#000;
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.animated-btn:hover {
+  background-color: #4f9cf9;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #4f9cf9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.top-bar button:hover {
+  background-color: #4f9cf9;
+}
+
+.top-bar button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007BB2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.top-bar button:hover {
+  background-color: #005f8a;
+  transform: scale(1.1); /* Efeito de "crescimento" */
+}
+
+.top-bar button:active {
+  transform: scale(0.95); /* Efeito ao clicar */
+}
+
+
+.bottom-links {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+  justify-content: center; /* Centraliza os botões */
+  gap: 10px; /* Espaçamento entre os botões */
+  margin: 20px 0; /* Espaçamento em relação ao conteúdo acima */
+}
+
+.bottom-links button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007BB2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bottom-links button:hover {
+  background-color: #005f8a;
+  transform: scale(1.1);
+}
+
+.bottom-links button:active {
+  transform: scale(0.95);
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+<header>
+    <h1>HackySoft</h1>
+</header>
+
+<div class="content">
+    <h2>Sobre Nós</h2>
+    <p>
+        A HackySoft é uma empresa criada por <a href="https://www.linkedin.com/in/cristiano-martins-576473206/" target="_blank" style="color: #007BB2; text-decoration: underline;">Cristiano Martins</a> especializada em segurança da informação, ethical hacking e segurança cibernética. 
+        Nosso objetivo é garantir que seus sistemas estejam protegidos contra ameaças e vulnerabilidades cibernéticas 
+        em constante evolução.
+    </p>
+    <p>
+        Com uma equipe de profissionais qualificados e apaixonados por tecnologia, oferecemos serviços de 
+        testes de penetração, análise de vulnerabilidades e consultoria em segurança digital. 
+        Nosso compromisso é identificar e mitigar riscos antes que eles possam ser explorados.
+    </p>
+    <p>
+        Trabalhamos lado a lado com nossos clientes para criar soluções personalizadas de acordo com as suas 
+        necessidades específicas, sempre com a ética e a segurança como nossos princípios fundamentais.
+    </p>
+    <p>
+         Nossa equipe de especialistas em segurança trabalha para proteger os sistemas e dados dos nossos clientes, garantindo que 
+         eles estejam seguros contra ameaças cibernéticas.
+         Se você precisa de soluções confiáveis e inovadoras, conte com a HackySoft.
+    </p>
+
+<!-- Links abaixo da descrição -->
+<div style="margin-top: 20px; text-align: center;">
+    <a href="Uso.html" class="animated-btn">Termos de Uso</a>
+    <a href="declaração.html" class="animated-btn">Declaração</a>
+    <a href="contato.html" class="animated-btn">Contacto</a>
+    <a href="Política.html" class="animated-btn">Política de Privacidade</a>
+  </div>
+
+</div>
+
+<div class="top-bar">
+    <button onclick="location.href='home.html'">Home</button>
+    <button onclick="location.href='servicos.html'">Serviços</button>
+    <button onclick="location.href='contato.html'">Contato</button>
+  </div>
+  
+
+  
+<footer>
+    <p>&copy; 2025 HackySoft - Todos os direitos reservados.</p>
+    
+</footer>
+
+<script>
+    // Mostrar o botão quando a página for rolada para baixo
+    window.onscroll = function() {
+        var backToTopButton = document.querySelector(".back-to-top");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Função para rolar até o topo
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>

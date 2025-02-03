@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="tecnology.ico">
+    <title>HackySoft - Serviços</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #4f9cf9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            flex-grow: 1;
+        }
+
+        .service {
+            background-color: #4f9cf9; /* Azul escuro */
+            color: white;
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .service p {
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .price {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .currency {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        .btn-buy {
+            background-color: #1770dd;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-buy:hover {
+            background-color: #000000;
+        }
+
+        footer {
+            background-color: #4f9cf9;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Adiciona um espaço extra na parte inferior para garantir que o conteúdo não se sobreponha ao footer */
+body {
+  margin-bottom: 50px; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilo do footer fixo na parte inferior */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #4f9cf9;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Estilo geral dos botões */
+.nav-buttons {
+    text-align: center;
+    margin-top: 50px; /* Ajuste a margem conforme necessário */
+}
+
+.btn {
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de animação */
+.btn:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #3e88c2; /* Muda a cor quando passa o mouse */
+}
+
+/* Efeito de foco para acessibilidade */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(79, 156, 249, 0.7);
+}
+
+/* Estilo geral dos botões da parte inferior */
+.bottom-buttons {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px; /* Ajuste a distância do rodapé */
+}
+
+.bottom-buttons .btn {
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de animação ao passar o mouse */
+.bottom-buttons .btn:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #3e88c2; /* Muda a cor ao passar o mouse */
+}
+
+/* Efeito de foco para acessibilidade */
+.bottom-buttons .btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(79, 156, 249, 0.7);
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #4f9cf9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            cursor: url('img/icons8-mouse-cursor-24.png'), auto; /* Define o cursor personalizado */
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<header>
+    <h1>Serviços de Segurança Cibernética da HackySoft</h1>
+    <p>Proteja seu negócio com soluções de ponta</p>
+</header>
+<div class="nav-buttons">
+    <a href="home.html" class="btn">Home</a>
+    <a href="sobre.html" class="btn">Sobre</a>
+    <a href="contato.html" class="btn">Contato</a>
+</div>
+
+<div class="services-container">
+    <!-- Serviço 1 -->
+    <div class="service">
+        <h2>Testes de Penetração Básico</h2>
+        <p>Avaliação inicial de segurança para sistemas e redes.</p>
+        <div class="price">$200 USD / R$1000 BRL / €180 EUR / ₮160,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+
+    <!-- Serviço 2 -->
+    <div class="service">
+        <h2>Testes de Penetração Intermediário</h2>
+        <p>Testes avançados para detectar vulnerabilidades e ameaças.</p>
+        <div class="price">$400 USD / R$2000 BRL / €360 EUR / ₮320,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+
+    <!-- Serviço 3 -->
+    <div class="service">
+        <h2>Testes de Penetração Completo</h2>
+        <p>Testes completos com relatórios detalhados e recomendações.</p>
+        <div class="price">$600 USD / R$3000 BRL / €540 EUR / ₮480,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+
+    <!-- Serviço 4 -->
+    <div class="service">
+        <h2>Consultoria em Segurança Cibernética</h2>
+        <p>Aconselhamento para proteger a infraestrutura de TI e prevenir ataques.</p>
+        <div class="price">$500 USD / R$2500 BRL / €450 EUR / ₮400,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+
+    <!-- Novo Serviço - Ferramentas para Pentest -->
+    <div class="service">
+        <h2>Ferramentas para Pentest</h2>
+        <p>Conjunto completo de ferramentas para testes de penetração.</p>
+        <div class="price">$150 USD / R$750 BRL / €135 EUR / ₮120,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+
+    <!-- Novo Serviço - Backup na Nuvem -->
+    <div class="service">
+        <h2>Backup na Nuvem</h2>
+        <p>Serviço seguro de backup na nuvem para proteger seus dados.</p>
+        <div class="price">$100 USD / R$500 BRL / €90 EUR / ₮80,000 AOA</div>
+        <div class="currency">
+            <span>USD</span>
+            <span>BRL</span>
+            <span>EUR</span>
+            <span>AOA</span>
+        </div>
+        <button class="btn-buy" onclick="window.location.href='https://www.paypal.com/myaccount/transfer/homepage/pay?from=SUM-AZ';">Comprar</button>
+    </div>
+</div>
+<div class="bottom-buttons">
+    <a href="Uso.html" class="btn">Termos</a>
+    <a href="Seguranca.html" class="btn">Segurança</a>
+    <a href="declaração.html" class="btn">Declaração</a>
+    <a href="Política.html" class="btn">Política</a>
+</div>
+
+
+<footer>
+    <p>HackySoft - Proteja sua infraestrutura de TI com soluções de segurança cibernética.</p>
+    <p>&copy; 2025 HackySoft. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

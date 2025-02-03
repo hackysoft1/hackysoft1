@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackySoft - Shopping For All</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0F1E3A;
+            color: #FFFFFF;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #172F4C;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex: 1;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #123456;
+            border-radius: 10px;
+            padding: 20px;
+            width: 28%;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .plan:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .plan h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #6EC1E4;
+        }
+
+        .plan p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .plan ul li {
+            margin-bottom: 10px;
+        }
+
+        .plan button {
+            background-color: #0B72B9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+        }
+
+        .plan button:hover {
+            background-color: #094a80;
+            transform: scale(1.1);
+        }
+
+        .plan button.brevemente {
+            background-color: #007BFF; /* Cor azul */
+            color: #FFF; /* Texto branco */
+            transform: scale(1.2);
+            animation: pulse 0.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #172F4C;
+            font-size: 14px;
+            margin-top: 20px;
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        HackySoft - Shopping For All
+    </div>
+
+    <div class="container">
+        <div class="plan">
+            <h3>Plano Gratuito</h3>
+            <p>Gratuito</p>
+            <ul>
+                <li>Acesso a materiais de Cibersegurança</li>
+                <li>Laboratórios para pentest com ambiente simulado</li>
+                <li>Acesso a ferramentas básicas de análise de vulnerabilidades</li>
+                <li>Introdução à proteção contra ataques comuns (phishing, malware, etc.)</li>
+                <li>Acesso a artigos e tutoriais sobre melhores práticas de segurança</li>
+            </ul>
+            <button onclick="showMessage(this)" onmouseout="restoreMessage(this, 'INSCREVER-SE GRATUITAMENTE')">INSCREVER-SE GRATUITAMENTE</button>
+        </div>
+
+        <div class="plan">
+            <h3>Plano Básico</h3>
+            <p>10.000 AOA/mês</p>
+            <ul>
+                <li>Teste de penetração básico cobrindo vulnerabilidades comuns</li>
+                <li>Ferramentas para pentest com suporte a relatórios detalhados</li>
+                <li>Relatório mensal de segurança com recomendações de melhoria</li>
+                <li>Treinamento em segurança digital para equipes pequenas</li>
+                <li>Monitoramento básico de ameaças em tempo real</li>
+            </ul>
+            <button onclick="showMessage(this)" onmouseout="restoreMessage(this, 'COMPRAR AGORA')">COMPRAR AGORA</button>
+        </div>
+
+        <div class="plan">
+            <h3>Plano Pessoal</h3>
+            <p>50.000 AOA/mês</p>
+            <ul>
+                <li>Teste de penetração intermediário cobrindo múltiplos vetores de ataque</li>
+                <li>Ferramentas para pentest Premium com suporte a integrações</li>
+                <li>Monitoramento em tempo real com alertas personalizados</li>
+                <li>Relatório semanal de segurança com análise detalhada</li>
+                <li>Proteção avançada contra ataques DDoS e ameaças persistentes</li>
+                <li>Acesso à consultoria personalizada sobre infraestrutura cibernética</li>
+            </ul>
+            <button onclick="showMessage(this)" onmouseout="restoreMessage(this, 'COMPRAR AGORA')">COMPRAR AGORA</button>
+        </div>
+
+        <div class="plan">
+            <h3>Plano Empresarial</h3>
+            <p>100.000 AOA/ano</p>
+            <ul>
+                <li>Teste de penetração completo com cobertura de ameaças avançadas</li>
+                <li>Ferramentas completas para pentest com automação e integração de CI/CD</li>
+                <li>Proteção total contra ameaças cibernéticas (APT, ransomware, etc.)</li>
+                <li>Monitoramento em tempo real com suporte 24/7</li>
+                <li>Relatório diário de segurança com análise preditiva</li>
+                <li>Consultoria avançada e suporte dedicado para grandes corporações</li>
+                <li>Planejamento estratégico de cibersegurança para o futuro da empresa</li>
+            </ul>
+            <button onclick="showMessage(this)" onmouseout="restoreMessage(this, 'COMPRAR AGORA')">COMPRAR AGORA</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 HackySoft
+    </div>
+
+    <script>
+        function showMessage(button) {
+            button.textContent = "BREVEMENTE";
+            button.classList.add("brevemente");
+        }
+
+        function restoreMessage(button, originalText) {
+            button.textContent = originalText;
+            button.classList.remove("brevemente");
+        }
+    </script>
+
+</body>
+</html>

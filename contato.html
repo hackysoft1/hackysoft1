@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="tecnology.ico">
+    <title>HackySoft - Contato</title>
+    
+    <style>
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4f9cf9;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .nav {
+            display: flex;
+            gap: 15px;
+        }
+        header .nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        header .nav a:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #4da6ff;
+            color: #fff;
+            padding: 50px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+        form button {
+            background-color: #4f9cf9;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #005c8a;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4f9cf9;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #004e92;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+
+        .footer-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-buttons a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #4f9cf9;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .footer-buttons a:hover {
+            background-color: #004e92;
+        }
+        footer {
+    position: relative; /* ou apenas remova a propriedade 'position' */
+    background-color: #4f9cf9;
+    padding: 10px 0;
+    text-align: center;
+}
+
+        .map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporção 16:9 */
+    background-color: #4f9cf9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+}
+
+* {
+    box-sizing: border-box;
+}
+        body {
+            font-family: Arial, sans-serif;
+            color: #4f9cf9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            cursor: url('icons8-mouse-cursor-24.png'), auto; /* Define o cursor personalizado */
+        
+        }
+        #success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+    </style>
+        
+</head>
+<body>
+    <header>
+        <h1>HackySoft Contato</h1>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="contato" class="card">
+            <h2>Informações de Contato</h2>
+            <p><strong>Endereço:</strong> Rua A, A26, Cidade do Kilamba, País Angola</p>
+            <p><strong>Telefone:</strong> +244 952393828</p>
+            <p><strong>Email:</strong> suporte.hackysoft@gmail.com</p>
+        </section>
+
+        <section class="card">
+            <h2>Envie uma Mensagem</h2>
+ <!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/mkgnvnvo"
+method="POST"
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="success-message" style="display:none; color: rgb(10, 89, 234); font-size: 16px;">
+                Parabéns, sua mensagem foi enviada com sucesso!
+            </div>
+           
+            <div class="footer-buttons">
+                <a href="declaração.html">Declaração</a>
+                <a href="Política.html">Política</a>
+                <a href="Uso.html">Termos</a>
+                <a href="seguranca.html">Segurança</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3838.1452535554035!2d13.2539334!3d-8.9933493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f23e88fa23d%3A0xf7730d3b4f38c549!2sKilamba%20Bloco%20A!5e1!3m2!1spt-PT!2sao!4v1732364885564!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio real do formulário para demonstrar a mensagem de sucesso
+
+    // Exibe a mensagem de sucesso
+    document.getElementById("success-message").style.display = "block";
+
+    // Reseta o formulário após o envio
+    document.getElementById("contact-form").reset();
+});
+
+    </script>
+    <footer>
+        &copy; 2025 HackySoft - Todos os direitos reservados.
+    </footer>
+</body>
+</html>

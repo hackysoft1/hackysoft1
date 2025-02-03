@@ -1,0 +1,5 @@
+Set-Cookie: sessionid=abc123; Domain=hackysoft1.github.io; Path=/
+Set-Cookie: sessionid=abc123; HttpOnly; Secure; Path=/
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'
+Referrer-Policy: no-referrer
